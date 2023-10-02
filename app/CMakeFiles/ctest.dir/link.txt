@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/ctest.dir/main.c.o CMakeFiles/ctest.dir/myfunc.c.o  -o ctest  -lm 

@@ -12,7 +12,7 @@ extern "C" {
 }
 
 TEST(fibonachiTest, num0) {
-    ASSERT_EQ(fibonachi(0), 1);
+    ASSERT_EQ(square(2, -5, 2)[0], 2);
     ASSERT_EQ(fibonachi(1), 1);
     ASSERT_EQ(fibonachi(2), 2);
 }

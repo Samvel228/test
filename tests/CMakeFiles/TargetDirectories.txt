@@ -1,0 +1,3 @@
+/home/02/kocharya/text/ctest/tests/CMakeFiles/rebuild_cache.dir
+/home/02/kocharya/text/ctest/tests/CMakeFiles/edit_cache.dir
+/home/02/kocharya/text/ctest/tests/CMakeFiles/ctest-tests.dir

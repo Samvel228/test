@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -Wconversion -Wunreachable-code -Wold-style-cast -fprofile-arcs -ftest-coverage   CMakeFiles/ctest-tests.dir/main.cpp.o CMakeFiles/ctest-tests.dir/__/app/myfunc.c.o  -o ctest-tests  ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgmock.a -lpthread -lgcov ../lib/libgtest.a -lpthread 
