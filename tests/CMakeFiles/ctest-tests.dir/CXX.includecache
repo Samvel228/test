@@ -33,12 +33,6 @@ gtest/gtest.h
 /home/02/kocharya/text/ctest/tests/square_test.h
 gtest/gtest.h
 -
-fcntl.h
--
-errno.h
--
-unistd.h
--
 myfunc.h
 /home/02/kocharya/text/ctest/tests/myfunc.h
 

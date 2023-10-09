@@ -37,13 +37,10 @@ double* square(double a, double b, double c) {
     double discriminant = b * b - 4 * a * c;
     double* roots = malloc(2 * sizeof(double));
 
-    if (discriminant > 0) {
+    if (discriminant >= 0) {
         roots[0] = (-b + sqrt(discriminant)) / (2 * a);
         roots[1] = (-b - sqrt(discriminant)) / (2 * a);
-    } else if (discriminant == 0) {
-        roots[0] = -b / (2 * a);
     } else {
-        free(roots);
         return NULL;
     }
 

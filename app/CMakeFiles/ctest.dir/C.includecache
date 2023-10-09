@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/02/kocharya/text/ctest/app/main.c
-stdio.h
--
-myfunc.h
-/home/02/kocharya/text/ctest/app/myfunc.h
-
 /home/02/kocharya/text/ctest/app/myfunc.c
 stdio.h
 -
