@@ -52,15 +52,35 @@ TEST(SQUARETest, discr_eq_0) {
     ASSERT_EQ(compareSquareResults(a, b, c, expected, numRoots), 1);
 }
 
-TEST(SQUARETest, invalid_test_1) {
-    double a = 0, b = 0, c = 0;
+TEST(SQUARETest, no_roots) {
+    double a = 1, b = 0, c = 1;
     int numRoots = 0;
     ASSERT_EQ(compareSquareResults(a, b, c, NULL, numRoots), 1);
 }
 
-TEST(SQUARETest, invalid_test_2) {
-    double a = 0, b = 2, c = 3;
+TEST(SQUARETest, identical_roots) {
+    double a = 1, b = -2, c = 1;
+    double expected[] = {1.0, 1.0};
+    int numRoots = 2;
+    ASSERT_EQ(compareSquareResults(a, b, c, expected, numRoots), 1);
+}
+
+TEST(SQUARETest, complex_roots) {
+    double a = 1, b = 1, c = 1;
+    double expected[] = {-0.5, 0.5};
+    int numRoots = 2;
+    ASSERT_EQ(compareSquareResults(a, b, c, expected, numRoots), 1);
+}
+
+TEST(SQUARETest, large_coefficients) {
+    double a = 1e6, b = 1e6, c = 1e6;
+    double expected[] = {-1e6, -1e6};
+    int numRoots = 2;
+    ASSERT_EQ(compareSquareResults(a, b, c, expected, numRoots), 1);
+}
+
+TEST(SQUARETest, zero_coefficients) {
+    double a = 0, b = 0, c = 0;
     int numRoots = 0;
     ASSERT_EQ(compareSquareResults(a, b, c, NULL, numRoots), 1);
 }
-#endif // SQUARE_H
