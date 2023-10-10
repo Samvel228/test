@@ -217,8 +217,8 @@ app/CMakeFiles/ctest.dir/clean:
 # Target rules for target external/googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-external/googletest/googlemock/CMakeFiles/gmock_main.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/all
 external/googletest/googlemock/CMakeFiles/gmock_main.dir/all: external/googletest/googlemock/CMakeFiles/gmock.dir/all
+external/googletest/googlemock/CMakeFiles/gmock_main.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f external/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make external/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f external/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make external/googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/02/kocharya/text/ctest/CMakeFiles --progress-num=9,10 "Built target gmock_main"
@@ -326,9 +326,9 @@ external/googletest/googletest/CMakeFiles/gtest.dir/clean:
 # Target rules for target tests/CMakeFiles/ctest-tests.dir
 
 # All Build rule for target.
+tests/CMakeFiles/ctest-tests.dir/all: external/googletest/googlemock/CMakeFiles/gmock.dir/all
 tests/CMakeFiles/ctest-tests.dir/all: external/googletest/googletest/CMakeFiles/gtest_main.dir/all
 tests/CMakeFiles/ctest-tests.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/all
-tests/CMakeFiles/ctest-tests.dir/all: external/googletest/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) -f tests/CMakeFiles/ctest-tests.dir/build.make tests/CMakeFiles/ctest-tests.dir/depend
 	$(MAKE) -f tests/CMakeFiles/ctest-tests.dir/build.make tests/CMakeFiles/ctest-tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/02/kocharya/text/ctest/CMakeFiles --progress-num=4,5,6 "Built target ctest-tests"

@@ -6,3 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/02/kocharya/text/ctest/app/myfunc.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+myfunc.h
+/home/02/kocharya/text/ctest/app/myfunc.h
+
+/home/02/kocharya/text/ctest/app/myfunc.h
+
